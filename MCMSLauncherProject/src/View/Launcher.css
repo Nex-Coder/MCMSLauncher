@@ -1,0 +1,9 @@
+#root {
+    -fx-font-size: 14px;
+    -fx-font-family: sans-serif;
+    -fx-background-color: #ff0000;
+}
+
+#hboxl {
+	-fx-background-color: #ffffff;
+}
