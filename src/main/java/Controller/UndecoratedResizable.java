@@ -10,6 +10,7 @@ import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
+//created by Alexander Berg from StackOverflow (Thanks to this guy, i'm too lazy to create something already done pretty well. Few modifications to suit my application (oc name: ResizeHelper))
 public class UndecoratedResizable {
 
 	public static void addResizeListener(Stage stage, LauncherController lc) {
@@ -94,20 +95,14 @@ public class UndecoratedResizable {
                     sceneHeight = scene.getHeight();
 
             if (MouseEvent.MOUSE_MOVED.equals(mouseEventType)) {
-                if (mouseEventX < border && mouseEventY < border) {
-                    cursorEvent = Cursor.NW_RESIZE;
-                } else if (mouseEventX < border && mouseEventY > sceneHeight - border) {
+                if (mouseEventX < border+10 && mouseEventY > sceneHeight - border-10) {
                     cursorEvent = Cursor.SW_RESIZE;
-                } else if (mouseEventX > sceneWidth - border && mouseEventY < border) {
-                    cursorEvent = Cursor.NE_RESIZE;
-                } else if (mouseEventX > sceneWidth - border && mouseEventY > sceneHeight - border) {
+                } else if (mouseEventX > sceneWidth - border-10 && mouseEventY > sceneHeight - border-10) {
                     cursorEvent = Cursor.SE_RESIZE;
-                } else if (mouseEventX < border) {
+                } else if (mouseEventX < border && mouseEventY > 26) {
                     cursorEvent = Cursor.W_RESIZE;
                 } else if (mouseEventX > sceneWidth - border) {
                     cursorEvent = Cursor.E_RESIZE;
-                } else if (mouseEventY < border) {
-                    cursorEvent = Cursor.N_RESIZE;
                 } else if (mouseEventY > sceneHeight - border) {
                     cursorEvent = Cursor.S_RESIZE;
                 } else {

@@ -31,9 +31,9 @@
 	-fx-background-color: #FF6044;
 }
 .sidebar-buttons {
-	            -fx-background-radius: 5em;
-                -fx-min-width: 3px;
-                -fx-min-height: 3px;
-                -fx-max-width: 3px;
-                -fx-max-height: 3px;
+	-fx-background-radius: 5em;
+    -fx-min-width: 3px;
+    -fx-min-height: 3px;
+    -fx-max-width: 3px;
+    -fx-max-height: 3px;
 }

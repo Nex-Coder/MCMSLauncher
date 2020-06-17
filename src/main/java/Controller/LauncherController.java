@@ -70,7 +70,7 @@ public class LauncherController extends AnchorPane {
 
 	public LauncherController(Stage stage) {
 		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/View/Launcher.fxml"));
-		this.getStylesheets().add(getClass().getResource("/View/Launcher.css").toExternalForm());
+		this.getStylesheets().add(getClass().getResource("/CSS/Launcher.css").toExternalForm());
 		fxmlLoader.setRoot(this);
 		fxmlLoader.setController(this);
 

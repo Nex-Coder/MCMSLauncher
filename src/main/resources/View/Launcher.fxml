@@ -43,7 +43,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-<fx:root id="root" minHeight="450.0" minWidth="800.0" prefHeight="450.0" prefWidth="800.0" stylesheets="@Launcher.css" type="AnchorPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root id="root" minHeight="450.0" minWidth="800.0" prefHeight="450.0" prefWidth="800.0" stylesheets="@../CSS/Launcher.css" type="AnchorPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <VBox id="sidebox" layoutY="26.0" prefHeight="424.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="26.0">
       <children>
          <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="80.0" text="Button">
@@ -70,12 +70,13 @@
          <Button id="btnclose" fx:id="btnExit" alignment="TOP_RIGHT" layoutX="735.0" layoutY="10.0" mnemonicParsing="false" text="X" />
      </buttons>
    </ButtonBar>
-   <StackPane layoutX="100.0" layoutY="26.0" prefHeight="424.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="0.0">
+   <StackPane layoutX="100.0" layoutY="26.0" prefHeight="424.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="26.0">
       <children>
          <AnchorPane prefHeight="200.0" prefWidth="200.0">
             <children> 
                 <TextField fx:id="textField" layoutX="12.0" layoutY="384.0" prefHeight="26.0" prefWidth="167.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="12.0" />
                 <Button fx:id="btnClckMe" layoutX="612.0" layoutY="384.0" onAction="#doSomething" text="Click Me" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+               <Label layoutX="12.0" layoutY="14.0" text="Pane 1 test." AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="14.0" />
             </children>
          </AnchorPane>
          <AnchorPane prefHeight="200.0" prefWidth="200.0" visible="false">
