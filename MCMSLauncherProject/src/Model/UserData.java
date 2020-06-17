@@ -1,6 +1,6 @@
 package Model;
 
-import java.io.FileInputStream;
+//import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.ObjectInputStream;
@@ -9,7 +9,11 @@ import java.nio.file.Path;
 
 public class UserData implements Serializable {
 
-	private boolean initStatus; 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5359182082764197492L;
+	//private boolean initStatus; 
 	private Path modPath;
 	private String serverID;
 

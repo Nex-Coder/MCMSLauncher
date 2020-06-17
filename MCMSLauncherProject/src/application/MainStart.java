@@ -36,14 +36,14 @@ import Controller.LauncherController;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class MainStart extends Application {
+    
     @Override
     public void start(Stage stage) throws Exception {
-        LauncherController launcherController = new LauncherController();
-        launcherController.setText("Hello!");
-        
-        stage.setScene(new Scene(launcherController));
+        stage.initStyle(StageStyle.UNDECORATED);
+        stage.setScene(new Scene(new LauncherController(stage)));
         stage.setTitle("MCMS Launcher");
         stage.setMinWidth(800);
         stage.setMinHeight(450);
