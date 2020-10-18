@@ -25,6 +25,7 @@ hs_err_pid*
 _ignore*
 
 # VS Code
+.vscode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
